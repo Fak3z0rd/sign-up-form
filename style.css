@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./font/Norse-Bold.otf);
+}
+
+:root {
+    --border-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    background-image: url("./img/teemu-paananen-OOE4xAnBhKo-unsplash.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+}
+
+aside div {
+    color: white;
+}
+
+.aside-footer {
+    margin-top: auto;
+    position: relative;
+    bottom: 0.5rem;
+    font-size: 0.7rem;
+    color: rgb(198, 198, 198);
+}
+
+.aside-footer > a {
+    color: inherit;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: Norse-bold, sans-serif;
+    margin-top: 40%;
+    background: rgba(10, 10, 10, 0.5);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.logo img {
+    height: 6rem;
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+section {
+  border: 1px solid red;
+  width: 70vw;
+}
