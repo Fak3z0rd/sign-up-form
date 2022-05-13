@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <script src="./index.js" defer></script>
     </head>
     <body>
         <aside>
@@ -25,7 +26,7 @@
         </aside>
 
         <main>
-            <section id="section-1">
+            <section>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis delectus beatae suscipit
                     similique ex magnam quasi quo, reiciendis inventore quae excepturi temporibus in deserunt nostrum
@@ -33,35 +34,48 @@
                 </p>
                 <p>Lorem <em>ipsum</em> dolor sit amet consectetur</p>
             </section>
-            <section id="section-2">
-                <div>Let's do this</div>
-                <div>
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname" />
-                </div>
-                <div>
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname" />
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" />
-                </div>
-                <div>
-                    <label for="phonenumber">Phone Number</label>
-                    <input type="tel" name="phonenumber" id="phonenumber" />
-                </div>
-                <div>
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" />
-                </div>
-                <div>
-                    <label for="confirmpassword">Confirm Password</label>
-                    <input type="password" name="confirmpassword" id="confirmpassword" />
-                </div>
+            <section>
+                <form autocomplete="off" method="post">
+                    <div class="form-header">
+                        <h1>Let's do this</h1>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="First" required />
+                            <span></span>
+                        </div>
+                        <div class="input-box">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last" required />
+                            <span></span>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" placeholder="email@example.com" required />
+                            <span></span>
+                        </div>
+                        <div class="input-box">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="tel" name="phonenumber" id="phonenumber" required />
+                            <span></span>
+                        </div>
+                        <div class="input-box">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required/>
+                            <span data-match-pass></span>
+                        </div>
+                        <div class="input-box">
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" required/>
+                            <span></span>
+
+                        </div>
+                    </div>
+                    <button type="button">Create Account</button>
+                </form>
             </section>
-            <section id="section-3">
-                <button>Create Account</button>
+            <section>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </section>
         </main>
